@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zent Impresiones</title>
+    <link rel="stylesheet" href="css/colours.css">
+
+    
+    <style>
+        body {
+            background-color: #112b3c;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .form {
+
+            width: 650px;
+            height: 550px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 40px -10px #000;
+            margin: calc(25vw - 220px) auto;
+            padding: 20px 30px;
+            max-width: calc(100vw -40px);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        h2 {
+
+            margin: 10px 0;
+            padding-bottom: 10px;
+            width: 180px;
+            color: #f66b0e;
+            border-bottom: 3px solid #f66b0e;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: none;
+            outline: none;
+            resize: none;
+            border: 0;
+            transition: all .3s;
+            border-bottom: 2px solid grey;
+        }
+
+        input:focus {
+            border-bottom: 2px solid #f66b0e
+        }
+
+        p::before {
+            content: attr(type);
+            display: block;
+            margin: 28px 0 0;
+            color: #112b3c;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            float: right padding: 8px 12px;
+            margin: 8px 0 0;
+            background: 0;
+            color: black cursor: pointer;
+            transition: all .3s;
+            color: #f66b0e
+        }
+
+        button:hover {
+            background: #112b3c;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 1px;
+            background-color: #f66b0e;
+            grid-area: header;
+        }
+
+        .header nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .header nav ul li {
+            background-color: #112b3c;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .header nav ul li a {
+            display: flex;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 12px;
+        }
+
+        li:hover {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-bottom: solid #f66b0e;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #112b3c;
+            grid-area: footer;
+            margin: 1px;
+
+        }
+
+        .footer div {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .footer div img {
+            width: 25px;
+            height: 25px;
+            margin: 5px;
+        }
+
+        .footer>p {
+            font-size: 12px;
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+            grid-template-rows: 0.4fr 2.2fr 0.3fr;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header"
+                "main main"
+                "footer footer";
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .main {
+            grid-area: main;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/cuadros.html">Cuadros</a></li>
+                <li><a href="/posters.html">Posters</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid1">
+        <div class="header"></div>
+        <div class="footer"></div>
+        <div class="main"></div>
+    </div>
+
+    <form class="form">
+        <h2>Contacto</h2>
+        <p type="Nombre:"><input placeholder="Indique su nombre completo..."></p>
+        <p type="Email:"><input placeholder="Indique su Email..."></p>
+        <p type="Mensaje:"><input placeholder="En que podemos ayudar?..."></p>
+
+        <button>Enviar Mensaje</button>
+
+    </form>
+
+    <footer class="footer">
+        <p>Zent Impresiones.&copy; Todos los derechos reservados. <strong>2022</strong></p>
+        <div>
+            <img src="/images/instagram.png" alt="">
+            <img src="/images/Gmail.png" alt="">
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
