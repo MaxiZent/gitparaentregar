@@ -1,0 +1,33 @@
+/*****FOOTER*****/
+
+@import "../base/variables";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112b3c;
+    grid-area: footer;
+}
+
+.footer p {
+    display: flex;
+    color: #f66b0e;
+    font-size: 12px;
+    margin: 10px;
+    cursor: default;
+}
+
+
+.footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+
+    img {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,44 @@
+/***** GENERALES *****/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+}
+
+/*****GRIDS POR AREAS*****/
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+        "header header"
+        "hero hero"
+        "productos productos"
+        "footer footer"
+}
+
+/*****NOMBRE DE AREAS*****/
+.header {
+    grid-area: header;
+}
+
+#hero {
+    grid-area: hero;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+.footer {
+    grid-area: footer;
+}
