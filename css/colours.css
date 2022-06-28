@@ -381,7 +381,7 @@ li:hover {
   width: 650px;
   height: 550px;
   background: white;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 40px -10px #000;
   margin: calc(25vw - 220px) auto;
   padding: 20px 30px;
@@ -412,14 +412,6 @@ input {
 
 input:focus {
   border-bottom: 2px solid #f66b0e
-
-}
-
-p:before {
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  color: #112b3c;
 }
 
 button {
@@ -434,13 +426,10 @@ button {
   padding: 10px;
 }
 
-
-
 .form button:hover {
   background: #112b3c;
   cursor: pointer;
 }
-
 
 
 /*-----MQ-----*/
