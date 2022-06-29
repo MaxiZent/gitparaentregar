@@ -14,6 +14,21 @@ body {
     line-height: 1.6;
 }
 
+@mixin font ($color, $font-size, $font-weight: bold, $font-style: normal, $font-family: 'helvetica') {
+    color: $color;
+    font: $font-style $font-weight $font-size $font-family;
+}
+
+@each $color in green,
+red {
+    .#{$color} {
+        background-color: #{$color};
+        color: antiquewhite;
+    }
+}
+
+
+
 /*****GRIDS POR AREAS*****/
 .gridcontainer {
     display: grid;

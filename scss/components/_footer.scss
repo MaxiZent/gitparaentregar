@@ -6,12 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #112b3c;
+    background-color: $color-secundario;
     grid-area: footer;
 
     p {
-        color: $color-principal;
-        font-size: 12px;
+        @include font ($color-principal, $font-size: 13px, $font-family: helvetica);
         margin: 10px;
         cursor: default;
     }
